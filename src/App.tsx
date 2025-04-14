@@ -1,11 +1,19 @@
 import './App.css'
-import {FamilyComponent} from "./components/family-component/FamilyComponent.tsx";
+import {coursesTitleArray} from "./data/data.ts";
+// import {FamilyComponent} from "./components/family-component/FamilyComponent.tsx";
 
-function App() {
+
+
+const App = () => {
 
   return (
     <>
-    <FamilyComponent/>
+    {/*<FamilyComponent/>*/}
+      <ul className='grid grid-flow-col grid-rows-3 gap-4'>
+        {
+          coursesTitleArray.map((value, index) => <li key = {index} className='text-center text-white  bg-indigo-600 rounded-full ... hover:bg-sky-700 ... w-35 h-15'>{value}</li>)
+        }
+      </ul>
     </>
   )
 }
