@@ -1,0 +1,34 @@
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.course-card {
+    border: 2px solid #007bff; /* Required minimal style */
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.course-card h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.modules ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.modules li {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #e7f3ff;
+    border-radius: 4px;
+}
