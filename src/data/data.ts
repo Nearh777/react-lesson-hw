@@ -40,6 +40,9 @@ export const simpsons: ICharacter[] = [
     },
 ];
 
+
+
+
 export  const coursesTitleArray: string[] = [
     'JavaScript Complex',
     'Java Complex',
