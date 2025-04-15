@@ -1,27 +1,18 @@
-
+//
 // import {FC} from "react";
+// // import {IModule} from "../../models/ICourseModelArray.ts";
 // import {ICourseModelArray} from "../../models/ICourseModelArray.ts";
+// //
 //
-//
-// type PropsTypeModules = {
-//     courseModule: ICourseModelArray
+// type ModulePropType = {
+//     items: ICourseModelArray[]
 // }
 //
 //
-// export const CourseModuleComponent: FC<PropsTypeModules> = ({courseModule}) => {
+// export const CourseModuleComponent: FC<ModulePropType> = ({items}) => {
 //     return (
 //
-//         <ul>
-//             {courseModule.modules.map((module) => (
-//                 <li>
-//                     {module}
-//                 </li>
-//             ))}
-//         </ul>
-//         // <ul>
-//         //     {courseModule.modules.map((course, index) => {
-//         //         <li>{course}</li>
-//         //     })}
-//         // </ul>
+//
+//
 //     );
 // };

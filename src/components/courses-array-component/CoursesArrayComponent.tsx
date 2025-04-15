@@ -3,11 +3,13 @@ import {FC} from "react";
 import './CoursesArrayComponent.css'
 
 
+
 type CourseListProps = {
     courses: ICourseModelArray[]
 }
 
 export const CoursesArrayComponent: FC<CourseListProps> = ({courses}) => {
+
     return (
         <div className="course-list">
             {
@@ -20,7 +22,9 @@ export const CoursesArrayComponent: FC<CourseListProps> = ({courses}) => {
                             <strong>Modules:</strong>
                             <ul>
                                 {course.modules.map((module, index) => (
-                                    <li key={index}>{module}</li>
+                                    <li key={index}>
+                                        {module}
+                                    </li>
                                 ))}
                             </ul>
                         </div>
