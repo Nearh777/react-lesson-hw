@@ -1,27 +1,65 @@
 import {TodoModel} from "../model/TodoModel.ts";
 import {PostModel} from "../model/PostModel";
+import { CommentModel } from "../model/CommentModel.ts";
+import { CommentDummyModel, CommentResponseDummyjson } from "../model/CommentDummyModel.ts";
+import {PostDummyModel, PostResponseDummyjson} from "../model/PostDummyModel.ts";
 
 const endpointTodos = import.meta.env.VITE_API_BACE_URL + '/todos';
+const endpointPosts = import.meta.env.VITE_API_BACE_URL + '/posts';
+const endpointComments = import.meta.env.VITE_API_BACE_URL + '/comments';
+
+// const endpointDummyTodos = import.meta.env.VITE_API_BACE_URL_DUMMY + '/todos';
+const endpointDummyPosts = import.meta.env.VITE_API_BACE_URL_DUMMY + '/posts';
+const endpointDummyComments = import.meta.env.VITE_API_BACE_URL_DUMMY + '/comments';
+
 
 
 const loadTodos = async (): Promise<TodoModel[]> => {
 
         return await fetch(endpointTodos)
-        .then(value => value.json());
+        .then(todo => todo.json());
 }
 
-
-const endpointPost = import.meta.env.VITE_API_BACE_URL + '/posts';
 
 const loadPosts = async (): Promise<PostModel[]> => {
 
-    return await fetch(endpointPost)
-    .then(value => value.json());
+    return await fetch(endpointPosts)
+    .then(post => post.json());
 }
+
+
+const loadComments = async (): Promise<CommentModel[]> => {
+    return await fetch(endpointComments)
+        .then(comment => comment.json());
+}
+
+
+
+
+const loadDummyPosts = async (): Promise<PostDummyModel[]> => {
+
+    const response: PostResponseDummyjson = await fetch(endpointDummyPosts)
+        .then(post => post.json());
+
+    return response.posts;
+}
+
+
+
+const loadDummyComments = async (): Promise<CommentDummyModel[]> => {
+     const response: CommentResponseDummyjson = await fetch(endpointDummyComments)
+        .then(comment => comment.json());
+     return response.comments;
+}
+
 
 export {
     loadTodos,
-    loadPosts
+    loadPosts,
+    loadComments,
+    loadDummyPosts,
+    loadDummyComments,
+
 
 }
 
