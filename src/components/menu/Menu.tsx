@@ -22,13 +22,13 @@ import { Link } from "react-router";
 export const Menu = () => {
     return (
         <ul  className="grid grid-cols-3 gap-4 justify-items-center">
-            <li className="flex text-[#fff] text-2xl border-2 border-none rounded-lg justify-center items-center h-12 bg-cyan-500 w-32">
+            <li className="flex text-[#fff] text-2xl border-2 border-none rounded-lg justify-center items-center h-12 bg-cyan-500 w-42">
                 <Link to={'/users'}>Users</Link>
             </li>
-            <li className=" flex text-[#fff] text-2xl border-2 border-none rounded-lg justify-center  items-center h-12 bg-cyan-500 w-32">
+            <li className=" flex text-[#fff] text-2xl border-2 border-none rounded-lg justify-center  items-center h-12 bg-cyan-500 w-42">
                 <Link to={'/posts'}>Posts</Link>
             </li>
-            <li className=" flex text-[#fff] text-2xl border-2 border-none rounded-lg justify-center  items-center h-12 bg-cyan-500 w-32">
+            <li className=" flex text-[#fff] text-2xl border-2 border-none rounded-lg justify-center  items-center h-12 bg-cyan-500 w-42">
                 <Link to={'/comments'}>Comments</Link>
             </li>
         </ul>
