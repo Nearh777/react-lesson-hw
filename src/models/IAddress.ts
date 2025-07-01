@@ -1,11 +1,11 @@
-import {IUserCoordinates} from "./IUserCoordinates.ts";
+import {ICoordinates} from "./ICoordinates.ts";
 
-export interface IUserAddress {
+export interface IAddress {
     address: string;
     city: string;
     state: string;
     stateCode: string;
     postalCode: string;
-    coordinates: IUserCoordinates;
+    coordinates: ICoordinates;
     country: string;
 }

@@ -1,4 +1,4 @@
-export interface IUserHair {
+export interface IHair {
     color: string;
     type: string;
 }

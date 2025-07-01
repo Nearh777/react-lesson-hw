@@ -1,4 +1,4 @@
-export interface IUserBank {
+export interface IBank {
     cardExpire: string;
     cardNumber: string;
     cardType: string;

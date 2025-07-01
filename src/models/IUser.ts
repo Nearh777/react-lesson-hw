@@ -1,8 +1,11 @@
-import {IUserHair} from "./IUserHair.ts";
-import {IUserAddress} from "./IUserAddress.ts";
-import {IUserBank} from "./IUserBank.ts";
-import {IUserCompany} from "./IUserCompany.ts";
-import {IUserCrypto} from "./IUserCrypto.ts";
+import { IAddress } from "./IAddress";
+import { IHair } from "./IHeir";
+import {IBank} from "./IBank.ts";
+import {ICompany} from "./ICompany.ts";
+import {ICrypto} from "./ICrypto.ts";
+
+
+
 
 
 
@@ -23,16 +26,16 @@ export interface IUser {
   height: number;
   weight: number;
   eyeColor: string;
-  hair: IUserHair;
+  hair: IHair;
   ip: string;
-  address: IUserAddress;
+  address: IAddress;
   macAddress: string;
   university: string;
-  bank: IUserBank;
-  company: IUserCompany;
+  bank: IBank;
+  company: ICompany;
   ein: string;
   ssn: string;
   userAgent: string;
-  crypto: IUserCrypto;
+  crypto: ICrypto;
   role: string;
 }
